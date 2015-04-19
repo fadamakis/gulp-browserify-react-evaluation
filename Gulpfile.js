@@ -2,13 +2,13 @@ var gulp = require('gulp');
 var browserify = require('browserify');
 var babelify = require('babelify');
 var source = require('vinyl-source-stream');
-
 var stylus = require('gulp-stylus');
+var axis = require('axis');
 
 // Get one .styl file and render 
 gulp.task('stylus', function () {
   gulp.src('./css/app.styl')
-    .pipe(stylus())
+    .pipe(stylus({ use: axis() }))
     .pipe(gulp.dest('./css/'));
 });
 

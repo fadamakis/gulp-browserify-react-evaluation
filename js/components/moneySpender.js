@@ -36,8 +36,8 @@ var MoneySpender = React.createClass({
         };
 
         return (
-            <div>
-                <h1> Money Spender </h1>
+            <div className="app">
+                <h1> How much do you want to spend? </h1>
 
                 <PriceChooser onFilter={ this.filter } />    
 

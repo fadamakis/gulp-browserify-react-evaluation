@@ -20,7 +20,8 @@ var PriceChooser = React.createClass({
 	render: function() {
 		return (
 			<form onSubmit={this.filterProducts}>
-				<input onChange={this.onChange} value={this.state.price} />
+				<input onChange={this.onChange} value={this.state.price} /> 
+				 
 				<button> Search </button>
 			</form>
 			);

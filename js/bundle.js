@@ -7,7 +7,7 @@ var _MoneySpender = require('./components/MoneySpender');
 
 var _MoneySpender2 = _interopRequireWildcard(_MoneySpender);
 
-React.render(React.createElement(_MoneySpender2['default'], null), document.body);
+React.render(React.createElement(_MoneySpender2['default'], null), document.querySelector('#app'));
 
 },{"./components/MoneySpender":2}],2:[function(require,module,exports){
 'use strict';
@@ -62,11 +62,11 @@ var MoneySpender = React.createClass({
 
         return React.createElement(
             'div',
-            null,
+            { className: 'app' },
             React.createElement(
                 'h1',
                 null,
-                ' Money Spender '
+                ' How much do you want to spend? '
             ),
             React.createElement(_PriceChooser2['default'], { onFilter: this.filter }),
             this.state.products.map(newProduct)
@@ -134,7 +134,7 @@ var Product = React.createClass({
     render: function render() {
         return React.createElement(
             "div",
-            null,
+            { className: "product" },
             "Product ",
             this.props.name,
             " costs ",
