@@ -5,25 +5,27 @@ var MoneySpender = React.createClass({
 
     getInitialState: function() {
         return {
-            products: [{
-                name:'iPhone 6s',
-                price:'180'
-            },{
-                name:'Galaxy S6',
-                price:'220'
-            }] 
+            products: [] 
         };
     },
 
     filter: function(p){
 
-        var filteredProducts = this.state.products.filter(function (el) {
-          return el.price <= p;
-        });
+        var url = "/products.json";
 
-        this.setState({
-            products: filteredProducts
-        });
+        $.get(url, (result) => {
+
+            var filteredProducts = result.products.filter(function (el) {
+              return el.price <= p;
+            });
+            
+            //console.log(filteredProducts);
+
+            this.setState({
+                products: filteredProducts
+            });
+
+        }.bind(this));
 
     },
 
