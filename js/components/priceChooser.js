@@ -14,7 +14,6 @@ var PriceChooser = React.createClass({
 
 	filterProducts: function(e){
 		e.preventDefault();
-
 		this.props.onFilter(this.state.price);
 	},
 
@@ -28,3 +27,5 @@ var PriceChooser = React.createClass({
 	}
 
 });
+
+export default PriceChooser;

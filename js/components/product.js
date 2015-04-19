@@ -9,3 +9,5 @@ var Product = React.createClass({
     }
 
 });
+
+export default Product;

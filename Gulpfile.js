@@ -23,6 +23,6 @@ gulp.task('browserify', function(){
 gulp.task('default', ['stylus','browserify']);
 
 gulp.task('watch', function(){
-    gulp.watch('js/*.js', ['browserify']);
+    gulp.watch('js/**/*.js', ['browserify']);
     gulp.watch('css/*.styl', ['stylus']);
 });

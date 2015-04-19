@@ -1,3 +1,6 @@
+import PriceChooser from './PriceChooser';
+import Product from './Product';
+
 var MoneySpender = React.createClass({
 
     getInitialState: function() {
@@ -44,4 +47,5 @@ var MoneySpender = React.createClass({
 
 });
 
-React.render(<MoneySpender />, document.body);
+
+export default MoneySpender;
