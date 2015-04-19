@@ -1,7 +1,7 @@
 {
     "products":
     [
-    {"name":"iPhone 6s", "price":"180"},
-    {"name":"Galaxy S6", "price":"220"}
+    {"name":"iPhone 5s", "price":"483","url":"http://www.bestprice.gr/item/2153598517/apple-iphone-5s-16gb.html"},
+    {"name":"Galaxy S6", "price":"344","url":"http://www.bestprice.gr/item/2153946147/samsung-galaxy-s5-16gb.html"}
     ]
 }

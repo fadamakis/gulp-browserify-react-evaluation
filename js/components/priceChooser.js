@@ -2,7 +2,7 @@ var PriceChooser = React.createClass({
 
 	getInitialState: function() {
 		return {
-			price: 200
+			price: 400
 		};
 	},
 

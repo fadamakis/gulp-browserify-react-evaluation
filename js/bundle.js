@@ -57,7 +57,7 @@ var MoneySpender = React.createClass({
     render: function render() {
 
         var newProduct = function newProduct(product) {
-            return React.createElement(_Product2['default'], { name: product.name, price: product.price });
+            return React.createElement(_Product2['default'], { name: product.name, price: product.price, url: product.url });
         };
 
         return React.createElement(
@@ -89,7 +89,7 @@ var PriceChooser = React.createClass({
 
 	getInitialState: function getInitialState() {
 		return {
-			price: 200
+			price: 400
 		};
 	},
 
@@ -138,7 +138,14 @@ var Product = React.createClass({
             "Product ",
             this.props.name,
             " costs ",
-            this.props.price
+            this.props.price,
+            ". You can find it ",
+            React.createElement(
+                "a",
+                { href: this.props.url, target: "_blank" },
+                "here"
+            ),
+            "."
         );
     }
 

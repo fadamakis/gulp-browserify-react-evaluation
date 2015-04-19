@@ -32,7 +32,7 @@ var MoneySpender = React.createClass({
     render: function() {
 
         var newProduct = function(product){
-            return <Product name={product.name} price={product.price} />
+            return <Product name={product.name} price={product.price}  url={product.url} />
         };
 
         return (
