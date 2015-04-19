@@ -38,7 +38,7 @@ var MoneySpender = React.createClass({
     filter: function filter(p) {
         var _this = this;
 
-        var url = '/products.json';
+        var url = 'fakeapi.com/products.json';
 
         $.get(url, (function (result) {
 
